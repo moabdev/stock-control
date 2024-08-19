@@ -1,9 +1,5 @@
-import React from 'react'
+"use client";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+export default function PasswordResetPage() {
+  return <h1>Hello</h1>;
 }
-
-export default page
