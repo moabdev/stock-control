@@ -1,5 +1,15 @@
-import { Layout } from "@/components/layout/Layout";
+// /app/page.tsx
+import Dashboard from "@/components/dashboard/Dashboard";
+import React from "react";
+import OnboardingLayout from "./(onboarding)/layout";
 
-export default function Home() {
-  return <Layout />;
-}
+
+const HomePage = () => {
+  return (
+    <OnboardingLayout>
+      <Dashboard />
+    </OnboardingLayout>
+  );
+};
+
+export default HomePage;
