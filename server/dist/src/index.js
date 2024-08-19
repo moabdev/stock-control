@@ -35,7 +35,7 @@ app.use("/users", user_route_1.default);
 app.use("/expenses", expense_route_1.default);
 app.use("/auth", auth_route_1.default);
 /* SERVER */
-const port = Number(process.env.PORT) || 8000;
+const port = Number(process.env.PORT) || 5000;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
