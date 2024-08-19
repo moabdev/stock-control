@@ -1,6 +1,6 @@
 import { AreaChartComponent } from "../charts/AreaChart";
 import { BarChartComponent } from "../charts/BarChart";
-import { PieChartComponent } from "../charts/PieChart copy 2";
+import { PieChartComponent } from "../charts/PieChart";
 import Navbar from "../navbar/Navbar";
 
 const Dashboard = () => {
@@ -13,15 +13,17 @@ const Dashboard = () => {
 
         {/* Charts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-md">
-            <PieChartComponent />
-          </div>
-          <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-md">
-            <BarChartComponent />
-          </div>
-          <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg shadow-md">
-            <AreaChartComponent />
-          </div>
+          <PieChartComponent />
+
+          <BarChartComponent />
+
+          <AreaChartComponent />
+
+          <PieChartComponent />
+
+          <BarChartComponent />
+
+          <AreaChartComponent />
         </div>
       </div>
     </div>

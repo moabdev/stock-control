@@ -11,9 +11,9 @@ export const Logo = () => {
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="font-medium text-black dark:text-white whitespace-pre"
+        className="font-bold text-lg text-black dark:text-white whitespace-pre"
       >
-        Acet Labs
+        Stock Control
       </motion.span>
     </Link>
   );
