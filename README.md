@@ -1,6 +1,6 @@
 # 📦 StockControl
 
-É uma aplicação de controle de estoque moderna e segura, desenvolvida para ajudar empresas a gerenciar seus produtos de maneira eficiente. Com um painel de controle intuitivo e autenticação de dois fatores via e-mail, oferece uma solução robusta e fácil de usar para monitorar, atualizar e visualizar o estoque em tempo real.
+### É uma aplicação de controle de estoque moderna e segura, desenvolvida para ajudar empresas a gerenciar seus produtos de maneira eficiente. Com um painel de controle intuitivo e autenticação de dois fatores via e-mail, oferece uma solução robusta e fácil de usar para monitorar, atualizar e visualizar o estoque em tempo real.
 
 ## 🚀 Funcionalidades Principais
 -**📊 Dashboard Intuitivo**: Visualize rapidamente o status do estoque, com gráficos e estatísticas detalhadas.
