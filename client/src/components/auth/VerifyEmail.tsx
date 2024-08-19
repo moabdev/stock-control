@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { cn } from "@/lib/utils";
 import {
   InputOTP,
   InputOTPGroup,
@@ -8,11 +7,17 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 import { Button } from "../ui/button";
+import { toast } from "../ui/use-toast";
 
 export default function VerifyEmail() {
+  const [code, setCode] = React.useState<string>("");
+
   const handleVerifyEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
+    toast({
+      title: "Email Enviado!",
+      description: `code: ${code}`,
+    });
   };
 
   return (
@@ -23,7 +28,12 @@ export default function VerifyEmail() {
 
       <form className="my-8" onSubmit={handleVerifyEmail}>
         <div className="flex flex-col items-center">
-          <InputOTP maxLength={6} className="w-full">
+          <InputOTP
+            className="w-full"
+            maxLength={6}
+            value={code}
+            onChange={(code) => setCode(code)}
+          >
             <InputOTPGroup>
               <InputOTPSlot index={0} />
               <InputOTPSlot index={1} />
